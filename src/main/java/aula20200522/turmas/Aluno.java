@@ -18,4 +18,11 @@ public class Aluno {
 	public String getRa() {
 		return ra;
 	}
+
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + ", ra=" + ra + "]";
+	}
+	
+	
 }
