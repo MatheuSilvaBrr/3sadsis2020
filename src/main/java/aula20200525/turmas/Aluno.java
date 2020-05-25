@@ -1,4 +1,4 @@
-package aula20200522.turmas;
+package aula20200525.turmas;
 
 public class Aluno {
 	private String nome;
@@ -12,15 +12,9 @@ public class Aluno {
 	public String getNome() {
 		return nome;
 	}
-
+	
 	public String getRa() {
 		return ra;
 	}
-
-	@Override
-	public String toString() {
-		return "Aluno [nome=" + nome + ", ra=" + ra + "]";
-	}
-	
 
 }

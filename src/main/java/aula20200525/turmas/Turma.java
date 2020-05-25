@@ -1,11 +1,11 @@
-package aula20200522.turmas;
+package aula20200525.turmas;
 
 import java.util.ArrayList;
 
 public class Turma {
 	private String código;
 	
-	private Aluno lider;
+	private Aluno líder;
 	
 	private ArrayList<Aluno> alunos = new ArrayList<>();
 	
@@ -24,10 +24,10 @@ public class Turma {
 	public ArrayList<Aluno> getAlunos() {
 		return this.alunos;
 	}
-	public void setLider(Aluno a) {
-		this.lider = a;
+	public void setLíder(Aluno a) {
+		this.líder = a;
 	}
-	public Aluno getLider() {
-		return this.lider;
+	public Aluno getLíder() {
+		return this.líder;
 	}
 }
