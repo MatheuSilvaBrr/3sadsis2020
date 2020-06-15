@@ -1,5 +1,7 @@
 package aula20200615.analiseDiscurso;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public abstract class Pessoa {
@@ -17,6 +19,23 @@ public abstract class Pessoa {
 		this.endereco = endereco;
 	}
 
+
+	public String getNome() {
+		return nome;
+	}
+
+	public String getSobrenome() {
+		return sobrenome;
+	}
+
+	public String getDataNascimento() {
+		final DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+		return df.format(this.dataNascimento.getTime());
+	}
+
+	public Endereco getEndereco() {
+		return endereco;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -58,6 +77,7 @@ public abstract class Pessoa {
 			return false;
 		return true;
 	}
+	
 	
 	
 	

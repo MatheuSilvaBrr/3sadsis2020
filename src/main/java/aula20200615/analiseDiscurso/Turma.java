@@ -43,4 +43,11 @@ public class Turma {
 	public Set<Aluno> getAlunos() {
 		return Collections.unmodifiableSet(alunos);
 	}
+
+	@Override
+	public String toString() {
+		return "Turma [descricao=" + descricao + ", codigo=" + codigo + ", alunos=" + alunos + ", lider=" + lider + "]";
+	}
+	
+	
 }

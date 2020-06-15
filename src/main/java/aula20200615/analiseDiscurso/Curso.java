@@ -23,6 +23,14 @@ public class Curso {
 		this.turmas.add(turma);
 	}
 
+	
+	
+	@Override
+	public String toString() {
+		return "Curso [coordenador=" + coordenador + ", descricao=" + descricao + ", codigo=" + codigo + ", turmas="
+				+ turmas + "]";
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;

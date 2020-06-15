@@ -8,13 +8,15 @@ public class Aluno extends Pessoa{
 	private Contrato contrato;
 	private Turma turma; 
 	
-	public Aluno(String nome, String sobrenome, Calendar dataNascimento, Endereco endereco, String ra, Contrato contrato) {
+	public Aluno(String nome, String sobrenome, Calendar dataNascimento, Endereco endereco, String ra) {
 		super(nome, sobrenome, dataNascimento, endereco);
 		this.ra = ra;
-		this.contrato = contrato;
 	}
 	public String getRa() {
 		return ra;
+	}
+	public void setContrato(Contrato contrato) {
+		this.contrato = contrato;
 	}
 	
 	public Contrato getContrato() {
@@ -50,6 +52,12 @@ public class Aluno extends Pessoa{
 			return false;
 		return true;
 	}
+	@Override
+	public String toString() {
+		return " Aluno: RA: " + ra + " Nome: " +  getNome() + " Sobrenome: " + getSobrenome() + " Data Nascimento: " + getDataNascimento() ;
+	}
+	
+	
 	
 	
 	
