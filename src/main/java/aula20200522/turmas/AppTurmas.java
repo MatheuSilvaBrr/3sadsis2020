@@ -18,7 +18,7 @@ public class AppTurmas {
 		//adsis3s2020.adicionarAluno(arthur);
 		adsis3s2020.adicionarAluno(new Aluno("Arthur","66654-7"));
 		
-		adsis3s2020.setLíder(leonardo);
+		adsis3s2020.setLider(leonardo);
 		
 		listarTurmaNoConsole(adsis3s2020);
 	}
@@ -32,7 +32,7 @@ public class AppTurmas {
 	private static void listarTurmaNoConsole(Turma t) {
 		System.out.println("----------------------------------------");
 		System.out.println("Turma: " + t.getCódigo());
-		System.out.println("Líder: " + t.getLíder().getNome());
+		System.out.println("Líder: " + t.getLider().getNome());
 		System.out.println("----------------------------------------");
 		System.out.println("Alunos: ");
 		for (Aluno a : t.getAlunos()) {
