@@ -26,6 +26,7 @@ public class Aluno extends Pessoa{
 	public void setTurma(Turma turma) {
 		this.turma = turma;
 	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
